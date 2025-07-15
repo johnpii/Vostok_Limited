@@ -1,6 +1,6 @@
 USE Vostok
 
--- Вставка тестовых данных в таблицу контейнеров
+-- Вставка тестовых данных в таблицу контейнеров.
 INSERT INTO Containers (Number, [Type], [Length], Width, Height, [Weight], IsEmpty, ArrivalDate) VALUES
 (101, 'Dry Van', 20.50, 10.00, 8.00, 2000.50, 0, '2020-10-01 08:00:00'),
 (102, 'Flat Rack', 15.00, 7.00, 5.00, 1500.75, 1, '2021-10-02 09:30:00'),
@@ -10,7 +10,7 @@ INSERT INTO Containers (Number, [Type], [Length], Width, Height, [Weight], IsEmp
 (106, 'Reefer', 18.00, 8.00, 6.50, 2200.75, 0, '2022-10-06 13:10:00'),
 (107, 'Open Top', 19.50, 9.00, 7.00, 1900.30, 0, '2023-10-07 15:45:00');
 
--- Вставка тестовых данных в таблицу операций
+-- Вставка тестовых данных в таблицу операций.
 INSERT INTO Operations (ContainerID, OperationStartDate, OperationEndDate, OperationType, OperatorFullName, InspectionPlace) VALUES
 ((SELECT Id FROM Containers WHERE Number = 101), '2020-10-01 09:00:00', '2020-10-01 10:00:00', 'Таможенное оформление', 'Иванов И.И.', 'Пункт 1'),
 ((SELECT Id FROM Containers WHERE Number = 101), '2020-10-01 11:30:00', '2020-10-01 12:15:00', 'Погрузка', 'Смирнов А.А.', 'Пункт 2'),

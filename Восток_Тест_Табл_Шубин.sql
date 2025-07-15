@@ -4,7 +4,7 @@ GO
 USE Vostok;
 GO
 
--- Напишите скрипты по созданию двух таблиц
+-- Напишите скрипты по созданию двух таблиц.
 
 -- Таблица контейнеров
 CREATE TABLE Containers (
@@ -20,7 +20,7 @@ CREATE TABLE Containers (
 );
 GO
 
--- Таблица операций
+-- Таблица операций.
 CREATE TABLE Operations (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
     ContainerID UNIQUEIDENTIFIER NOT NULL,
