@@ -4,9 +4,9 @@ GO
 USE Vostok;
 GO
 
--- Напишите скрипты по созданию двух таблиц.
+-- РќР°РїРёС€РёС‚Рµ СЃРєСЂРёРїС‚С‹ РїРѕ СЃРѕР·РґР°РЅРёСЋ РґРІСѓС… С‚Р°Р±Р»РёС†.
 
--- Таблица контейнеров
+-- РўР°Р±Р»РёС†Р° РєРѕРЅС‚РµР№РЅРµСЂРѕРІ
 CREATE TABLE Containers (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
     Number INT NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE Containers (
 );
 GO
 
--- Таблица операций.
+-- РўР°Р±Р»РёС†Р° РѕРїРµСЂР°С†РёР№.
 CREATE TABLE Operations (
     Id UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(),
     ContainerID UNIQUEIDENTIFIER NOT NULL,
